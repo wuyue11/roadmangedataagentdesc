@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交通监管多Agent智能数据治理助手 | 项目演示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        body {
+            background-color: #f5f7fa;
+            color: #2d3748;
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .container {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        h1 {
+            font-size: 28px;
+            color: #1a202c;
+            margin-bottom: 12px;
+        }
+        .subtitle {
+            color: #718096;
+            margin-bottom: 36px;
+            font-size: 16px;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 32px 0 16px;
+            color: #2d3748;
+            border-left: 4px solid #2b6cb0;
+            padding-left: 12px;
+        }
+        p, li {
+            line-height: 1.7;
+            font-size: 15px;
+            color: #4a5568;
+        }
+        ul {
+            padding-left: 22px;
+            margin: 10px 0;
+        }
+        .agent-arch {
+            background: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+        .data-result {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            flex: 1;
+            min-width: 220px;
+            background: #2b6cb0;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .card .num {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #a0aec0;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>交通监管多Agent智能数据治理助手</h1>
+        <div class="subtitle">面向政企交通运输行业 · AI多Agent自动化数据校验与合规研判系统</div>
+
+        <h2>一、项目核心痛点</h2>
+        <p>政企交通监管业务中，车辆监控数据、双随机检查清单等多源异构数据人工核对效率低、规则校验繁琐、异常数据排查耗时长、人工复核易出错，海量台账与监管记录依赖人工处理，合规检查成本高、漏检风险大。</p>
+
+        <h2>二、核心技术架构（多Agent协作 + 长链推理）</h2>
+        <div class="agent-arch">
+            <ul>
+                <li><strong>数据解析Agent</strong>：解析多格式监管台账、车辆监控原始数据，完成清洗、结构化转换</li>
+                <li><strong>规则校验Agent</strong>：加载交通监管合规规则，执行基础字段校验、格式校验</li>
+                <li><strong>异常研判Agent</strong>：通过<strong>长链推理</strong>串联多维度业务规则，深度定位隐性数据问题、不合规记录</li>
+                <li><strong>报告生成Agent</strong>：自动输出合规校验报告、问题清单、优化建议</li>
+            </ul>
+            <p>多Agent之间消息协同流转，实现从原始数据到合规报告的全链路自动化处理。</p>
+        </div>
+
+        <h2>三、落地成果与数据</h2>
+        <div class="data-result">
+            <div class="card">
+                <div class="num">数十万条</div>
+                <div>日均处理监管数据</div>
+            </div>
+            <div class="card">
+                <div class="num">75%</div>
+                <div>数据核对效率提升</div>
+            </div>
+            <div class="card">
+                <div class="num">65%</div>
+                <div>人工复核成本降低</div>
+            </div>
+        </div>
+        <p>项目已在内部交通监管业务场景落地，替代传统人工逐条核对模式，大幅提升监管业务处理速度与准确性。</p>
+
+        <div class="footer">
+            项目演示页 | 项目的说明文档
+        </div>
+    </div>
+</body>
+</html>
